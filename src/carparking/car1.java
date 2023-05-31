@@ -100,11 +100,13 @@ public class car1 extends javax.swing.JFrame {
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("CAR PARKING CHARGES");
         setLocation(new java.awt.Point(600, 250));
 
         t2.setModel(new javax.swing.SpinnerDateModel(new java.util.Date(), new java.util.Date(1650915060000L), new java.util.Date(1716924660000L), java.util.Calendar.HOUR));
 
         j1.setModel(ds);
+        j1.setSelectedIndex(0);
         jScrollPane1.setViewportView(j1);
 
         jButton1.setText("CheckOut");

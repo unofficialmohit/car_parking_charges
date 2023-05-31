@@ -47,6 +47,7 @@ public class car extends javax.swing.JFrame {
         plate = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("CAR PARKING CHARGES");
         setLocation(new java.awt.Point(600, 250));
 
         jLabel1.setText("Name of Driver");
@@ -141,7 +142,7 @@ public class car extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-       if(dname.getText()=="" || tcar.getSelectedIndex()==0 || v1.getSelectedIndex()==0||plate.getText()=="")
+       if(dname.getText().isEmpty() || tcar.getSelectedIndex()==0 || v1.getSelectedIndex()==0||plate.getText().isEmpty())
        {
        JOptionPane.showMessageDialog(null,"Invalid Input");
        }
